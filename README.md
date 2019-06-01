@@ -72,7 +72,7 @@ The main structure we utilize is demonstrated below
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/amber.jpg" width="180"/>
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/geisel.jpg" width="280"/>
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/bear.jpg" width="180"/>
-  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/house.jpg" width="180"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/house.jpg" width="220"/>
 </p>
 
 ### Result Images
