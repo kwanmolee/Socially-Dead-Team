@@ -29,8 +29,8 @@ def train(style_img,
           batch_size = 4, 
           dataset = "/datasets/COCO-2015",
           style_size = None,
-          save_model_dir = os.path.join(os.getcwd(),"saved_models"),
-          checkpoint_model_dir = os.path.join(os.getcwd(), "checkpoints"),
+          save_model_dir = os.path.join(os.getcwd(),"FastStyleTransfer/saved_models"),
+          checkpoint_model_dir = os.path.join(os.getcwd(), "FastStyleTransfer/checkpoints"),
           image_size = 256,
           random_seed = 42,
           content_weight = 1e5,
@@ -162,6 +162,12 @@ def train(style_img,
 
 
 def evaluate (content = 'arch', style = 'mosaic', content_scale = None,output_dir = os.path.join(os.getcwd(), "output_images")):
+    '''
+    generate an image with given content and style
+    content: name of the content image
+    style: name of style wanted
+    output_dir: directory where generated image is stored
+    '''
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     try:
         if not os.path.exists(output_dir):
@@ -170,15 +176,15 @@ def evaluate (content = 'arch', style = 'mosaic', content_scale = None,output_di
         print(e)
         sys.exit(1)
     cwd = os.getcwd()
-    content_img_path = os.path.join(cwd, f"content_images/{content}.jpg")
+    content_img_path = os.path.join(cwd, f"FastStyleTransfer/content_images/{content}.jpg")
     if not os.path.isfile(content_img_path):
         print("invalid content image path")
         return
-    style_model_path = os.path.join(cwd, f"saved_models/{style}.pth")
+    style_model_path = os.path.join(cwd, f"FastStyleTransfer/saved_models/{style}.pth")
     if not os.path.isfile(style_model_path):
         print("invalid style model path")
         return
-    style_img_path = os.path.join(cwd, f"style_images/{style}.jpg")
+    style_img_path = os.path.join(cwd, f"FastStyleTransfer/style_images/{style}.jpg")
     if not os.path.isfile(style_img_path):
         print("invalid style image path")
         return 
@@ -228,13 +234,18 @@ def evaluate (content = 'arch', style = 'mosaic', content_scale = None,output_di
 
 
 def showresult(style_list = ["cat","comic","mosaic","picasso"], content_list = ["arch","bear","geisel","house"]):
+    '''
+    show result of style transfer
+    style_list: a list of style name
+    content_list: a list of content images' names
+    '''
     height = len(style_list) + 1
     width = len(content_list) + 1
     fig,ax = plt.subplots(height, width, figsize = (height * 4, width * 4))
     cwd = os.getcwd()
-    content_dir = os.path.join(cwd, "content_images")
-    stylized_dir = os.path.join(cwd,"output_images")
-    style_dir = os.path.join(cwd,"style_images")
+    content_dir = os.path.join(cwd, "FastStyleTransfer/content_images")
+    stylized_dir = os.path.join(cwd,"FastStyleTransfer/output_images")
+    style_dir = os.path.join(cwd,"FastStyleTransfer/style_images")
     
     for axi in ax.ravel():
         axi.axis('off')
