@@ -1,5 +1,5 @@
 # Socially-Dead-Team
-[![Project Overview Status]](https://img.shields.io/badge/Socially%20Dead%20Team-Style%20Transfer%20Learning-red.svg)
+[![Project Overview Status](https://img.shields.io/badge/Socially%20Dead%20Team-Style%20Transfer%20Learning-red.svg)](https://github.com/oliver-lijiayi/Socially-Dead-Team)
 
 ## Content Overview
 * [Prerequisites](#Prerequisites)
