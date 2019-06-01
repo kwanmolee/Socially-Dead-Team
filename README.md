@@ -36,12 +36,14 @@
   2. slow_style_transfer.py: the class for the implementation of slow style transfer
   3. slow_style_main.py: get code run 
   4. utils.py: some utility functions making style_transfer_learning.ipynb clean
-  <b>FaststyleTransfer</b><br>
+
+<b>FaststyleTransfer</b><br>
   1. utils.py: 
   2. fast_style_transfer.py: 
   3. transformer_net.py:  
   4. neural_style.py: 
-  <b>style_transfer_learning.py
+
+<b>style_transfer_learning.py
 	For demonstrating the results of this project.
 </pre>
 
