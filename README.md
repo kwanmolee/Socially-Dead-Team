@@ -1,5 +1,7 @@
 # Socially-Dead-Team
-[![Project Overview Status](https://img.shields.io/badge/Socially%20Dead%20Team-Style%20Transfer%20Learning-red.svg)](https://github.com/oliver-lijiayi/Socially-Dead-Team)
+[![Project Team Status](https://img.shields.io/badge/Socially%20Dead%20Team-Style%20Transfer%20Learning-red.svg)](https://github.com/oliver-lijiayi/Socially-Dead-Team)
+[![Project 1 Status](https://img.shields.io/badge/1-Slow%20Style%20Transfer-9cf.svg)](https://github.com/oliver-lijiayi/Socially-Dead-Team/tree/master/SlowStyleTransfer)
+[![Project 2 Status](https://img.shields.io/badge/2-Fast%20Style%20Transfer-7777aa.svg)](https://github.com/oliver-lijiayi/Socially-Dead-Team/tree/master/FastStyleTransfer)
 
 ## Content Overview
 * [Prerequisites](#Prerequisites)
