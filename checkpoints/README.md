@@ -8,7 +8,11 @@ These are the saved checkpoints for the slow style transfer.
 
 **Avaiable Styles**
 ### 
-<figure class="third">
-<img src="https://raw.githubusercontent.com/oliver-lijiayi/Socially-Dead-Team/master/SlowStyleTransfer/StyleImages/cat.jpg?token=AKP2FBKUBB2EGDLPJ2QZSSS46JZPK" width="200"/><img src="https://raw.githubusercontent.com/oliver-lijiayi/Socially-Dead-Team/master/SlowStyleTransfer/StyleImages/comic.jpg?token=AKP2FBOLIZ7RIQSDQAUMOMC46JZQU" width="200"/><img src="https://raw.githubusercontent.com/oliver-lijiayi/Socially-Dead-Team/master/SlowStyleTransfer/StyleImages/mosaic.jpg?token=AKP2FBP6HRJ2MYBFGBSCO2K46JZY6" width="200"/><img src="https://raw.githubusercontent.com/oliver-lijiayi/Socially-Dead-Team/master/SlowStyleTransfer/StyleImages/picasso.jpg?token=AKP2FBKTC3EWAC5BA25EACC46JZ2U" width="200"/>
-</figure>
+<p float="left">
+  <img src="https://raw.githubusercontent.com/oliver-lijiayi/Socially-Dead-Team/master/SlowStyleTransfer/StyleImages/cat.jpg?token=AKP2FBKUBB2EGDLPJ2QZSSS46JZPK" width="200"/>
+  <img src="https://raw.githubusercontent.com/oliver-lijiayi/Socially-Dead-Team/master/SlowStyleTransfer/StyleImages/comic.jpg?token=AKP2FBOLIZ7RIQSDQAUMOMC46JZQU" width="200"/>
+  <img src="https://raw.githubusercontent.com/oliver-lijiayi/Socially-Dead-Team/master/SlowStyleTransfer/StyleImages/mosaic.jpg?token=AKP2FBP6HRJ2MYBFGBSCO2K46JZY6" width="200"/>
+  <img src="https://raw.githubusercontent.com/oliver-lijiayi/Socially-Dead-Team/master/SlowStyleTransfer/StyleImages/picasso.jpg?token=AKP2FBKTC3EWAC5BA25EACC46JZ2U" width="200"/>
+</p>
+
 
