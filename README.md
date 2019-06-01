@@ -66,6 +66,7 @@ The main structure we utilize is demonstrated below
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/StyleImages/mosaic.jpg" width="200"/>
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/StyleImages/picasso.jpg" width="200"/>
 </p>
+
 ### Cotent Images
 <p float="left">
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/amber.jpg" width="200"/>
@@ -73,7 +74,9 @@ The main structure we utilize is demonstrated below
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/bear.jpg" width="200"/>
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/house.jpg" width="200"/>
 </p>
+
 ### Result Images
+
 #### Slow Style Transfer Results
 
 #### Fast Style Transfer Results
