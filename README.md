@@ -2,10 +2,10 @@
 
 ## Contents
 * [Prerequisites](#Prerequisites)
-* [Code Organization](#Code Organization)
-* [Slow Style Transfer](#Slow Style Transfer)
+* [Code Organization](#Code-Organization)
+* [Slow Style Transfer](#Slow-Style-Transfer)
    * [1](#1)
-* [Fast Style Transfer](#Fast Style Transfer)
+* [Fast Style Transfer](#Fast-Style-Transfer)
 
 ## Prerequisites
 <pre>
