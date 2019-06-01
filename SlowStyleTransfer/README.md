@@ -10,11 +10,19 @@ This is the implementation of [Gatys method](https://arxiv.org/pdf/1508.06576.pd
   4. utils.py: some utility functions making style_transfer_learning.ipynb clean
 </pre>
 
-**<h3><center>Available Styles</center></h3>**
-### 
+### Style Images
 <p float="left">
-  <img src="SlowStyleTransfer/StyleImages/cat.jpg" width="150"/>
-  <img src="https://raw.githubusercontent.com/oliver-lijiayi/Socially-Dead-Team/master/SlowStyleTransfer/StyleImages/comic.jpg?token=AKP2FBOLIZ7RIQSDQAUMOMC46JZQU" width="200"/>
-  <img src="https://raw.githubusercontent.com/oliver-lijiayi/Socially-Dead-Team/master/SlowStyleTransfer/StyleImages/mosaic.jpg?token=AKP2FBP6HRJ2MYBFGBSCO2K46JZY6" width="200"/>
-  <img src="https://raw.githubusercontent.com/oliver-lijiayi/Socially-Dead-Team/master/SlowStyleTransfer/StyleImages/picasso.jpg?token=AKP2FBKTC3EWAC5BA25EACC46JZ2U" width="200"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/StyleImages/cat.jpg" width="150"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/StyleImages/comic.jpg" width="200"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/StyleImages/mosaic.jpg" width="200"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/StyleImages/picasso.jpg" width="200"/>
 </p>
+
+### Cotent Images
+<p float="left">
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/amber.jpg" width="180"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/geisel.jpg" width="280"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/bear.jpg" width="180"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/house.jpg" width="200"/>
+</p>
+
