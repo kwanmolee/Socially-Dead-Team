@@ -85,7 +85,7 @@ def train(style_img,
         transforms.ToTensor(),
         transforms.Lambda(lambda x: x.mul(255))
     ])
-    style = utils.load_image(style_image, size=style_size)
+    style = utils.load_image(style_img, size=style_size)
     style = style_transform(style)
     style = style.repeat(batch_size, 1, 1, 1).to(device)
 
@@ -161,20 +161,24 @@ def train(style_img,
 
 
 
-def evaluate (content_img_path, style_model_path, style_img_path, content_scale = None,output_dir = os.path.join(os.getcwd(), "output_images")):
+def evaluate (content = 'arch', style = 'mosaic', content_scale = None,output_dir = os.path.join(os.getcwd(), "output_images")):
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     try:
         if not os.path.exists(output_dir):
-            os.makedirs(save_model_dir)
+            os.makedirs(output_dir)
     except OSError as e:
         print(e)
         sys.exit(1)
+    cwd = os.getcwd()
+    content_img_path = os.path.join(cwd, f"content_images/{content}.jpg")
     if not os.path.isfile(content_img_path):
         print("invalid content image path")
         return
+    style_model_path = os.path.join(cwd, f"saved_models/{style}.pth")
     if not os.path.isfile(style_model_path):
         print("invalid style model path")
         return
+    style_img_path = os.path.join(cwd, f"style_images/{style}.jpg")
     if not os.path.isfile(style_img_path):
         print("invalid style image path")
         return 
@@ -223,7 +227,7 @@ def evaluate (content_img_path, style_model_path, style_img_path, content_scale 
 
 
 
-def showresult(style_list = ["udnie","comic","mosaic","rain_princess"], content_list = ["arch","bear","geisel","triton"]):
+def showresult(style_list = ["cat","comic","mosaic","picasso"], content_list = ["arch","bear","geisel","house"]):
     height = len(style_list) + 1
     width = len(content_list) + 1
     fig,ax = plt.subplots(height, width, figsize = (height * 4, width * 4))
@@ -282,13 +286,14 @@ def transform(x, style_model, device):
 
 
 
-def realtime_stylize(styles = ["mosaic", "candy", "rain_princess"]):
+def realtime_stylize(styles = ["mosaic", "comic", "picasso"]):
     '''
     show real time style transfer with selected three styles and the origin image at the same time
     styles: a list of selected styles (length: 3)
     '''
     
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
+#    device = 'cpu'
     model_dir = os.path.join(os.getcwd(),"saved_models")
     # init webcam
     cap = cv2.VideoCapture(0)
@@ -302,9 +307,19 @@ def realtime_stylize(styles = ["mosaic", "candy", "rain_princess"]):
         if not os.path.isfile(model_path):
             print(f"selected model ({style}) does not exist")
             return
-        style_models.append(TransformerNet())
-        style_models[-1].load_state_dict(torch.load(model_path))
-        style_models[-1].to(device)
+        # style_models.append(TransformerNet())
+        # style_models[-1].load_state_dict(torch.load(model_path))
+        # style_models[-1].to(device)
+
+        style_model = TransformerNet()
+        state_dict = torch.load(model_path)
+        # remove saved deprecated running_* keys in InstanceNorm from the checkpoint
+        for k in list(state_dict.keys()):
+            if re.search(r'in\d+\.running_(mean|var)$', k):
+                del state_dict[k]
+        style_model.load_state_dict(state_dict)
+        style_model.to(device)
+        style_models.append(style_model)
 
     while (cap.isOpened()):
         # Capture frame-by-frame
