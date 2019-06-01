@@ -12,6 +12,7 @@
    * [1](#1)
 * [Fast Style Transfer](#Fast-Style-Transfer)
 * [Examples](#Examples)
+   * [Style Images](#Style-Images)
    * [Cotent Images](#Cotent-Images)
    * [Result Images](#Result-Images)
    * [Slow Style Transfer Results](#Slow-Style-Transfer-Results)
@@ -67,7 +68,7 @@ The main structure we utilize is demonstrated below
 </p>
 ### Cotent Images
 <p float="left">
-  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/amber.jpg" width="150"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/amber.jpg" width="200"/>
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/giesel.jpg" width="200"/>
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/bear.jpg" width="200"/>
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/house.jpg" width="200"/>
