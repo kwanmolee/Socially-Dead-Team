@@ -8,14 +8,14 @@ These are the saved checkpoints for the slow style transfer.
 
 **Avaiable Styles**
 ### cat
-<img src="https://raw.githubusercontent.com/kwanmolee/Style-Transfer-Learning/master/StyleImages/cat.jpg" width="1000px"/>
+<img src="https://raw.githubusercontent.com/kwanmolee/Style-Transfer-Learning/master/StyleImages/cat.jpg" width="100px"/>
 
 ### comic
-<img src="https://raw.githubusercontent.com/kwanmolee/Style-Transfer-Learning/master/StyleImages/comic.jpg" width="1000px"/>
+<img src="https://raw.githubusercontent.com/kwanmolee/Style-Transfer-Learning/master/StyleImages/comic.jpg" width="100px"/>
 
 ### mosaic
-<img src="https://raw.githubusercontent.com/kwanmolee/Style-Transfer-Learning/master/StyleImages/mosaic.jpg" width="1000px"/>
+<img src="https://raw.githubusercontent.com/kwanmolee/Style-Transfer-Learning/master/StyleImages/mosaic.jpg" width="100px"/>
 
 ### picasso
-<img src="https://raw.githubusercontent.com/kwanmolee/Style-Transfer-Learning/master/StyleImages/picasso.jpg" width="1000px"/>
+<img src="https://raw.githubusercontent.com/kwanmolee/Style-Transfer-Learning/master/StyleImages/picasso.jpg" width="100px"/>
 
