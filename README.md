@@ -7,9 +7,16 @@
 ## Content Overview
 * [Prerequisites](#Prerequisites)
 * [Code Organization](#Code-Organization)
+* [Dataset](#Dataset)
 * [Slow Style Transfer](#Slow-Style-Transfer)
    * [1](#1)
 * [Fast Style Transfer](#Fast-Style-Transfer)
+* [Examples](#Examples)
+   * [Cotent Images](#Cotent-Images)
+   * [Result Images](#Result-Images)
+   * [Slow Style Transfer Results](#Slow-Style-Transfer-Results)
+   * [Fast Style Transfer Results](#Fast-Style-Transfer-Results)
+   
 
 ## Prerequisites
 <pre>
@@ -37,6 +44,8 @@
 	For demonstrating the results of this project.
 </pre>
 
+## Dataset
+
 ## Slow Style Transfer
 This is the implementation of [Gatys method](https://arxiv.org/pdf/1508.06576.pdf) on Neural Style Transfer.
 
@@ -46,6 +55,27 @@ This is the implementation of [Gatys method](https://arxiv.org/pdf/1508.06576.pd
 Related architecture and techniques are introduced in [this paper](https://arxiv.org/pdf/1508.06576.pdf).
 The main structure we utilize is demonstrated below
 ![model](https://raw.githubusercontent.com/kwanmolee/-Style-Transfer-Learning/master/model.png)
+
+## Examples
+
+### Style Images
+<p float="left">
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/StyleImages/cat.jpg" width="150"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/StyleImages/comic.jpg" width="200"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/StyleImages/mosaic.jpg" width="200"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/StyleImages/picasso.jpg" width="200"/>
+</p>
+### Cotent Images
+<p float="left">
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/amber.jpg" width="150"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/giesel.jpg" width="200"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/bear.jpg" width="200"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/ContentImages/house.jpg" width="200"/>
+</p>
+### Result Images
+#### Slow Style Transfer Results
+
+#### Fast Style Transfer Results
 
 
 
