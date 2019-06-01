@@ -13,12 +13,12 @@
 
 ## Prerequisites
 <pre>
-- pytorch: 3.6.4
-- NumPy: 1.14.2
-- matplotlib: 2.2.0
-- Pillow: 5.1.0
-- cv2:
-- GPU: NVIDIA GPU is advised
+1. pytorch: 3.6.4
+2. NumPy: 1.14.2
+3. matplotlib: 2.2.0
+4. Pillow: 5.1.0
+5. cv2:
+6. GPU: NVIDIA GPU is advised
 </pre>
 
 ## Code Organization
