@@ -15,8 +15,8 @@
    * [Style Images](#Style-Images)
    * [Cotent Images](#Cotent-Images)
    * [Result Images](#Result-Images)
-   * [Slow Style Transfer Results](#Slow-Style-Transfer-Results)
-   * [Fast Style Transfer Results](#Fast-Style-Transfer-Results)
+   	* [Slow Style Transfer Results](#Slow-Style-Transfer-Results)
+   	* [Fast Style Transfer Results](#Fast-Style-Transfer-Results)
    
 
 ## Prerequisites
