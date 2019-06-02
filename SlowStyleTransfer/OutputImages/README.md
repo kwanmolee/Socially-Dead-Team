@@ -1,8 +1,9 @@
 # Output Images
 
-## cat - comic - mosaic - picasso
+## Style: cat - comic - mosaic - picasso
 
 <pre>
+### Stylized output images
 * demo_amber.jpg
 * demo_bear.jpg
 * demo_geisel.jpg
