@@ -43,7 +43,7 @@
   3. transformer_net.py:  
   4. neural_style.py: 
 
-<b>style_transfer_learning.py
+<b>style_transfer_learning.py</b>
 	For demonstrating the results of this project.
 </pre>
 
