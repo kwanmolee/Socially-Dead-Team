@@ -81,7 +81,7 @@ The main structure we utilize is demonstrated below
 
 #### Slow Style Transfer Results
 <p float="left">
-  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/SST_results.png" width="800"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/SST_results.png" width="1000"/>
 </p>
 
 #### Fast Style Transfer Results
