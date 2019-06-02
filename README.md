@@ -86,7 +86,9 @@ The main structure we utilize is demonstrated below
 </p>
 
 #### Fast Style Transfer Results
-
+<p float="left">
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/FastStyleTransfer/output_images/grid%20result.png" width="1000"/>
+</p>
 
 
 	
