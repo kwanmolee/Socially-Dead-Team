@@ -15,8 +15,8 @@
    * [Style Images](#Style-Images)
    * [Cotent Images](#Cotent-Images)
    * [Result Images](#Result-Images)
-   * [Slow Style Transfer Results](#Slow-Style-Transfer-Results)
-   * [Fast Style Transfer Results](#Fast-Style-Transfer-Results)
+   	* [Slow Style Transfer Results](#Slow-Style-Transfer-Results)
+   	* [Fast Style Transfer Results](#Fast-Style-Transfer-Results)
    
 
 ## Prerequisites
@@ -43,7 +43,7 @@
   3. transformer_net.py:  
   4. neural_style.py: 
 
-<b>style_transfer_learning.py
+<b>style_transfer_learning.py</b>
 	For demonstrating the results of this project.
 </pre>
 
@@ -80,6 +80,9 @@ The main structure we utilize is demonstrated below
 ### Result Images
 
 #### Slow Style Transfer Results
+<p float="left">
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/SST_results.png" width="1000"/>
+</p>
 
 #### Fast Style Transfer Results
 
