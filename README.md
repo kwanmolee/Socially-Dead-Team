@@ -80,6 +80,9 @@ The main structure we utilize is demonstrated below
 ### Result Images
 
 #### Slow Style Transfer Results
+<p float="left">
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/SST_results.png" width="400"/>
+</p>
 
 #### Fast Style Transfer Results
 
