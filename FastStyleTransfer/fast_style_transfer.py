@@ -25,18 +25,18 @@ import cv2
 
 
 def train(style_img,
-          epochs = 2, 
-          batch_size = 4, 
-          dataset = "/datasets/COCO-2015",
-          style_size = None,
-          save_model_dir = os.path.join(os.getcwd(),"FastStyleTransfer/saved_models"),
-          checkpoint_model_dir = os.path.join(os.getcwd(), "FastStyleTransfer/checkpoints"),
-          image_size = 256,
-          random_seed = 42,
-          content_weight = 1e5,
-          style_weight = 1e10,
-          lr = 1e-3,
-          log_interval = 500):
+      epochs = 2, 
+      batch_size = 4, 
+      dataset = "/datasets/COCO-2015",
+      style_size = None,
+      save_model_dir = os.path.join(os.getcwd(),"FastStyleTransfer/saved_models"),
+      checkpoint_model_dir = os.path.join(os.getcwd(), "FastStyleTransfer/checkpoints"),
+      image_size = 256,
+      random_seed = 42,
+      content_weight = 1e5,
+      style_weight = 1e10,
+      lr = 1e-3,
+      log_interval = 500):
     '''
     train the network for a selected style
     style_img: path to the selected style image
@@ -161,7 +161,7 @@ def train(style_img,
 
 
 
-def evaluate (content = 'arch', style = 'mosaic', content_scale = None,output_dir = os.path.join(os.getcwd(), "output_images")):
+def evaluate (content = 'arch', style = 'mosaic', content_scale = None,output_dir = os.path.join(os.getcwd(), "FastStyleTransfer/output_images")):
     '''
     generate an image with given content and style
     content: name of the content image
@@ -305,7 +305,7 @@ def realtime_stylize(styles = ["mosaic", "comic", "picasso"]):
     
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 #    device = 'cpu'
-    model_dir = os.path.join(os.getcwd(),"saved_models")
+    model_dir = os.path.join(os.getcwd(),"FastStyleTransfer/saved_models")
     # init webcam
     cap = cv2.VideoCapture(0)
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
