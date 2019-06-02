@@ -48,6 +48,7 @@
 </pre>
 
 ## Dataset
+COCO-2015
 
 ## Slow Style Transfer
 This is the implementation of [Gatys method](https://arxiv.org/pdf/1508.06576.pdf) on Neural Style Transfer.
