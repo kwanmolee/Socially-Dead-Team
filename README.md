@@ -9,7 +9,6 @@
 * [Code Organization](#Code-Organization)
 * [Dataset](#Dataset)
 * [Slow Style Transfer](#Slow-Style-Transfer)
-   * [1](#1)
 * [Fast Style Transfer](#Fast-Style-Transfer)
 * [Examples](#Examples)
    * [Style Images](#Style-Images)
