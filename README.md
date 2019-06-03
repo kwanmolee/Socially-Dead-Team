@@ -2,7 +2,7 @@
 [![Project Team Status](https://img.shields.io/badge/Socially%20Dead%20Team-Style%20Transfer%20Learning-lightcoral.svg)](https://github.com/oliver-lijiayi/Socially-Dead-Team)
 [![Project 1 Status](https://img.shields.io/badge/1-Slow%20Style%20Transfer-lightskyblue.svg)](https://github.com/oliver-lijiayi/Socially-Dead-Team/tree/master/SlowStyleTransfer)
 [![Project 2 Status](https://img.shields.io/badge/2-Fast%20Style%20Transfer-7777aa.svg)](https://github.com/oliver-lijiayi/Socially-Dead-Team/tree/master/FastStyleTransfer)
-[![Result Status](https://img.shields.io/badge/3-Results-mediumaquamarine.svg)]()
+[![Result Status](https://img.shields.io/badge/3-Results-mediumaquamarine.svg)](https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/style_transfer_learning.ipynb)
 
 ## Content Overview
 * [Prerequisites](#Prerequisites)
