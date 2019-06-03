@@ -31,7 +31,11 @@ def SaveImage(tensor, args):
 	img = tensor.cpu().clone()  # we clone the tensor to not do changes on it
 	img = img.squeeze(0)      # remove the fake batch dimension
 	img = unloader(img)
-	img.save(args.output_image)
+	if args.test_mode == True:
+		opt_path = "SlowStyleTransfer/OutputImages/{0}.jpg".format(args.output_name)
+		img.save(opt_path)
+	else:
+		img.save(args.output_image)
 
 def PlotImage(args):
 	plt.figure(figsize=(15,15))
