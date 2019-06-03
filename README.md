@@ -9,7 +9,6 @@
 * [Code Organization](#Code-Organization)
 * [Dataset](#Dataset)
 * [Slow Style Transfer](#Slow-Style-Transfer)
-   * [1](#1)
 * [Fast Style Transfer](#Fast-Style-Transfer)
 * [Examples](#Examples)
    * [Style Images](#Style-Images)
@@ -25,7 +24,7 @@
 2. NumPy: 1.14.2
 3. matplotlib: 2.2.0
 4. Pillow: 5.1.0
-5. cv2:
+5. cv2: 4.0.0
 6. GPU: NVIDIA GPU is advised
 </pre>
 
@@ -52,8 +51,6 @@ COCO-2015
 
 ## Slow Style Transfer
 This is the implementation of [Gatys method](https://arxiv.org/pdf/1508.06576.pdf) on Neural Style Transfer.
-
-### 1
 
 ## Fast Style Transfer 
 Related architecture and techniques are introduced in [this paper](https://arxiv.org/pdf/1508.06576.pdf).
