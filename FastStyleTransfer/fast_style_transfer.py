@@ -143,7 +143,7 @@ def train(style_img,
                                   (agg_content_loss + agg_style_loss) / (batch_id + 1)
                 )
                 print(mesg)
-            if (batch_id + 1) > 800000: #only use the first 800000 samples from the dataset
+            if (batch_id + 1) > 80000: #only use the first 80000 samples from the dataset
                 break
                 
         # save the checkpoint
