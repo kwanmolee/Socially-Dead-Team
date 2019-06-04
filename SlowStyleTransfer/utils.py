@@ -21,7 +21,10 @@ def GetName(paths):
 		Name += [new_n]
 	return Name
 
-def Plot(content_dir, style_dir, output_dir):
+def Plot():
+	style_dir = "SlowStyleTransfer/StyleImages"
+	content_dir = "SlowStyleTransfer/ContentImages"
+	output_dir = "SlowStyleTransfer/OutputImages"
 	contents = [content_dir + "/" + filename for filename in os.listdir(content_dir)]
 	styles = [style_dir  + "/" + filename for filename in os.listdir(style_dir) if filename != ".ipynb_checkpoints"]
 	outputs = {}
@@ -38,7 +41,8 @@ def Plot(content_dir, style_dir, output_dir):
 		if i == 0:
 			for c in range(4):
 				plt.subplot(gs[i*10:i*10+10, c*10+10:c*10+20])
-				im = LoadImage(contents[c], "cuda")
+				im = Image.open(contents[c])
+				im = im.resize((512,512))
 				plt.imshow(im)
 				plt.axis("off")
 				plt.title("Content Image" + ": " + c_names[c], weight = "bold", fontsize = 40)
@@ -46,7 +50,8 @@ def Plot(content_dir, style_dir, output_dir):
 			for c in range(5):
 				plt.subplot(gs[i*10:i*10+10, c*10:c*10+10])
 				if c == 0:
-					im = LoadImage(styles[i-1], "cuda")
+					im = Image.open(styles[i-1])
+					im = im.resize((512,512))
 					plt.imshow(im)
 					plt.axis("off")
 					plt.title("Style Image" + ": " + s_names[i-1], weight = "bold", fontsize = 40)
@@ -72,3 +77,26 @@ def LoadImage(img_name, device = "cuda"):
 		img = img.detach().numpy()
 	img = np.moveaxis(img, [0, 1, 2], [2, 0, 1]) 
 	return img
+
+def display_example(style_name, content_name, output_name):
+	style = "SlowStyleTransfer/StyleImages/{0}.jpg".format(style_name)
+	content = "SlowStyleTransfer/ContentImages/{0}.jpg".format(content_name)
+	output = "SlowStyleTransfer/OutputImages/{0}.jpg".format(output_name)
+	fig, ax = plt.subplots(1,3, figsize = (15,15))
+	#plt.suptitle("Display One Example for Slow Style transfer") 
+	style_img = Image.open(style)
+	style_img = style_img.resize((256,256))
+	ax[0].imshow(style_img)
+	ax[0].set_title("Style Image", weight = "bold", fontsize = 16)
+	ax[0].axis('off')
+	content_img = Image.open(content)
+	content_img = content_img.resize((256,256))
+	ax[1].imshow(content_img)
+	ax[1].set_title("Content Image", weight = "bold", fontsize=16)
+	ax[1].axis("off")
+	opt = Image.open(output)
+	opt = opt.resize((256,256))
+	ax[2].imshow(opt)
+	ax[2].set_title("Output Image", weight = "bold", fontsize = 16)
+	ax[2].axis('off') 
+	plt.show()
