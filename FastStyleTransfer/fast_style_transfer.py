@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import argparse
 import os
 import sys
 import time
@@ -143,7 +142,7 @@ def train(style_img,
                                   (agg_content_loss + agg_style_loss) / (batch_id + 1)
                 )
                 print(mesg)
-            if (batch_id + 1) > 80000: #only use the first 80000 samples from the dataset
+            if (batch_id + 1) > 20000: #only use 80,000(20,000 * 4) samples from the dataset
                 break
                 
         # save the checkpoint
@@ -161,7 +160,7 @@ def train(style_img,
 
 
 
-def evaluate (content = 'arch', style = 'mosaic', content_scale = None,output_dir = os.path.join(os.getcwd(), "FastStyleTransfer/output_images")):
+def evaluate (content = 'bear', style = 'mosaic', content_scale = None,output_dir = os.path.join(os.getcwd(), "FastStyleTransfer/output_images")):
     '''
     generate an image with given content and style
     content: name of the content image
@@ -278,6 +277,9 @@ def showresult(style_list = ["cat","comic","mosaic","picasso"], content_list = [
 
 
 def transform(x, style_model, device):
+    '''
+    helper function that feeds the image captured each frame by the camera to the transforem net, which generates the style transferred image
+    '''
     content_image = x
     content_image = Image.fromarray(content_image)
 
