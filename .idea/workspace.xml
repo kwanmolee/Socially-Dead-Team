@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52bbf325-d93f-41b9-8b18-f8dc91504fdf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SlowStyleTransfer/saved_model/cat/cat_checkpoint.pth.tar.tar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SlowStyleTransfer/saved_model/comic/comic_checkpoint.pth.tar.tar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SlowStyleTransfer/saved_model/mosaic/mosaic_checkpoint.pth.tar.tar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SlowStyleTransfer/saved_model/picasso/picasso_checkpoint.pth.tar.tar" beforeDir="false" />
-    </list>
+    <list default="true" id="52bbf325-d93f-41b9-8b18-f8dc91504fdf" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +26,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -53,8 +50,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -89,16 +84,17 @@
       <updated>1559252393150</updated>
       <workItem from="1559252394712" duration="877000" />
       <workItem from="1559540807031" duration="82000" />
+      <workItem from="1559669934893" duration="314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1301000" />
+    <option name="totallyTimeSpent" value="1615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
