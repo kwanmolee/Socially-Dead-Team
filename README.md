@@ -37,13 +37,15 @@
   4. utils.py: some utility functions making style_transfer_learning.ipynb clean
 
 <b>FaststyleTransfer</b><br>
-  1. utils.py: 
-  2. fast_style_transfer.py: 
-  3. transformer_net.py:  
-  4. neural_style.py: 
+  1. utils.py: helper functions 
+  2. fast_style_transfer.py: main function package that contains all functions for this project
+  3. transformer_net.py: class for the transform network 
+  4. vgg.py: class for the vgg loss network
 
-<b>style_transfer_learning.py</b>
+<b>style_transfer_learning.ipynb</b>
 	For demonstrating the results of this project.
+<b>fast_style_training.ipynb</b>
+	For training style models for fast style transfer implementation.
 </pre>
 
 ## Dataset
