@@ -51,6 +51,7 @@ COCO-2015
 
 ## Slow Style Transfer
 This is the implementation of [Gatys method](https://arxiv.org/pdf/1508.06576.pdf) on Neural Style Transfer.
+For rerunning the slow style transfer, please go to [the demonstration file](https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/style_transfer_learning.ipynb) 
 
 ## Fast Style Transfer 
 Related architecture and techniques are introduced in [this paper](https://arxiv.org/pdf/1508.06576.pdf).
@@ -79,7 +80,7 @@ The main structure we utilize is demonstrated below
 
 #### Slow Style Transfer Results
 <p float="left">
-  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/SST_results.png" width="1000"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/SST_result.jpg" width="1000"/>
 </p>
 
 #### Fast Style Transfer Results
