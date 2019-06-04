@@ -27,10 +27,10 @@ def main():
     sst_arg_parser.add_argument("--output_image", type=str, 
                                     help="directory of output image")
 
-    sst_arg_parser.add_argument("--epochs", type=int, default=300,
+    sst_arg_parser.add_argument("--epochs", type=int, default=100,
                                     help="number of epochs")
     # training parameters
-    sst_arg_parser.add_argument("--style_weight", type=str, default=1000000,
+    sst_arg_parser.add_argument("--style_weight", type=int, default=320000,
                                     help="the style weight")
     sst_arg_parser.add_argument("--content_weight", type=str, default=1,
                                     help="the content weight")
