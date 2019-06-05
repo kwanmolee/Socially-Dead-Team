@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+-----------------------   moduele import ------------------------------
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 import os
 import sys
 import time
@@ -22,6 +25,10 @@ from vgg import Vgg16
 
 import cv2
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+-----------------------    train  function     -----------------------
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 def train(style_img,
       epochs = 2, 
@@ -158,7 +165,10 @@ def train(style_img,
 
     print("\nDone, trained model saved at", save_model_path)
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+-----------------------   run fast style Transfer  -------------------
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 def evaluate (content = 'bear', style = 'mosaic', content_scale = None,output_dir = os.path.join(os.getcwd(), "FastStyleTransfer/output_images")):
     '''
@@ -230,6 +240,10 @@ def evaluate (content = 'bear', style = 'mosaic', content_scale = None,output_di
     ax[2].axis('off')
 #     plt.tight_layout()
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+-----------------------   display the result   -----------------------
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 def showresult(style_list = ["cat","comic","mosaic","picasso"], content_list = ["arch","bear","geisel","house"]):
@@ -274,7 +288,10 @@ def showresult(style_list = ["cat","comic","mosaic","picasso"], content_list = [
 
     fig.subplots_adjust(hspace = 0.01, wspace = 0.005)
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+---------------------   Real time style transfer  ---------------------
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 def transform(x, style_model, device):
     '''
