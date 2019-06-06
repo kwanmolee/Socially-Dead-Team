@@ -62,9 +62,10 @@ This is the implementation of [Gatys method](https://arxiv.org/pdf/1508.06576.pd
 For rerunning the slow style transfer, please go to [the demonstration file](https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/style_transfer_learning.ipynb) 
 SlowStyleTransfer/OutputImages/result1.jpg
 <p float="left">
-  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/result1.jpg" width="200"/>
-  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/result2.jpg" width="200"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/result1.jpg" width="400"/>
+  <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/result2.jpg" width="400"/>
 </p>
+
 ## Fast Style Transfer 
 Related architecture and techniques are introduced in [this paper](https://arxiv.org/pdf/1508.06576.pdf).
 The main structure we utilize is demonstrated below
