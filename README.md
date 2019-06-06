@@ -11,7 +11,7 @@
 * [Slow Style Transfer](#Slow-Style-Transfer)
 * [Fast Style Transfer](#Fast-Style-Transfer)
 * [Examples](#Examples)
-   * [Demonstration of Reconstruction with White Noise Image] (#Demonstration-of-Reconstruction-with-White-Noise-image)
+   * [Demonstration of Reconstruction with White Noise Image] (#Demonstration-of-Reconstruction-with-White-Noise-Image)
    * [Style Images](#Style-Images)
    * [Cotent Images](#Cotent-Images)
    * [Result Images](#Result-Images)
