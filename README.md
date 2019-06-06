@@ -59,8 +59,8 @@ All data from [COCO-2015](http://cocodataset.org/#home)
 
 ## Slow Style Transfer
 This is the implementation of [Gatys method](https://arxiv.org/pdf/1508.06576.pdf) on Neural Style Transfer.
-For rerunning the slow style transfer, please go to [the demonstration file](https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/style_transfer_learning.ipynb) 
-There are two examples of slow style transfer with the style targets *starry night* and *sunflowers* respectively
+For rerunning the slow style transfer, please go to [the demonstration file](https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/style_transfer_learning.ipynb).
+These are two examples of our implementation of slow style transfer with the style targets *starry night* and *sunflowers* respectively.
 <p float="left">
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/result1.jpg" width="400"/>
   <img src="https://github.com/oliver-lijiayi/Socially-Dead-Team/blob/master/SlowStyleTransfer/OutputImages/result2.jpg" width="400"/>
