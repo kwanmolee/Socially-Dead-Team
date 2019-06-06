@@ -11,6 +11,7 @@
 * [Slow Style Transfer](#Slow-Style-Transfer)
 * [Fast Style Transfer](#Fast-Style-Transfer)
 * [Examples](#Examples)
+   * [Demonstration of Reconstruction with White Noise Image] (#Demonstration-of-Reconstruction-with-White-Noise-image)
    * [Style Images](#Style-Images)
    * [Cotent Images](#Cotent-Images)
    * [Result Images](#Result-Images)
@@ -50,6 +51,10 @@
 
 ## Dataset
 COCO-2015
+
+## Demonstration of Reconstruction with White Noise Image
+
+
 
 ## Slow Style Transfer
 This is the implementation of [Gatys method](https://arxiv.org/pdf/1508.06576.pdf) on Neural Style Transfer.
