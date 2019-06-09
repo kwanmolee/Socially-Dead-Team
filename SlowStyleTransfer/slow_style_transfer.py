@@ -34,12 +34,14 @@ class SlowStyleTransfer():
                                 content_layers=None,
                                 style_layers=None):
         cnn = copy.deepcopy(cnn)
+        # normalize model
         normalization = Normalization(normalization_mean, normalization_std).to(device)
+        # create content and style losses list
         content_losses = []
         style_losses = []
 
         model = nn.Sequential(normalization)
-        i = 0  # increment every time we see a conv
+        i = 0  # count the number of conv layers
         for layer in cnn.children():
             if isinstance(layer, nn.Conv2d):
                 i += 1
@@ -47,6 +49,7 @@ class SlowStyleTransfer():
 
             elif isinstance(layer, nn.ReLU):
                 name = 'relu_{}'.format(i)
+                #replace 'inplace' with 'outplace
                 layer = nn.ReLU(inplace=False)
 
             elif isinstance(layer, nn.MaxPool2d):
@@ -59,19 +62,23 @@ class SlowStyleTransfer():
                 raise RuntimeError('Unrecognized Layer: {}'.format(layer.__class__.__name__))
 
             model.add_module(name, layer)
+            # classify added model
             if name in content_layers:
+                # add content loss
                 target = model(content_img).detach()
                 content_loss = ContentLoss(target)
                 model.add_module("content_loss_{}".format(i), content_loss)
                 content_losses.append(content_loss)
 
             if name in style_layers:
+                # add style loss
                 target_feature = model(style_img).detach()
                 style_loss = StyleLoss(target_feature)
                 model.add_module("style_loss_{}".format(i), style_loss)
                 style_losses.append(style_loss)
 
         for i in range(len(model) - 1, -1, -1):
+            # trim off the layer
             if isinstance(model[i], ContentLoss) or isinstance(model[i], StyleLoss):
                 break
 
@@ -79,11 +86,13 @@ class SlowStyleTransfer():
         return model, style_losses, content_losses
 
     def InputOptimizer(self,input_img):
+        # add gradient to input image
         optimizer = optim.LBFGS([input_img.requires_grad_()])
         return optimizer
 
 
     def ImplementTransferLearning(self, args):
+        # run slow style transfer
         if args.test_mode == True:
             c_path = "SlowStyleTransfer/ContentImages/{0}.jpg".format(args.content_name)
             s_path = "SlowStyleTransfer/StyleImages/{0}.jpg".format(args.style_name)
@@ -101,6 +110,7 @@ class SlowStyleTransfer():
         optimizer = self.InputOptimizer(input_img)
         
         if args.saved_model is None:
+            # allocate desired depth layer
             cnn = models.vgg19(pretrained = True).features.to(device).eval()
             cnn_normalization_mean = torch.tensor([0.485, 0.456, 0.406]).to(device)
             cnn_normalization_std = torch.tensor([0.229, 0.224, 0.225]).to(device)
@@ -126,14 +136,15 @@ class SlowStyleTransfer():
                 
                 optimizer.zero_grad()
                 model(input_img)
+                # create style and content loss score
                 style_score = 0
                 content_score = 0
-                
+                # calculate scores
                 for sl in style_losses:
                     style_score += sl.loss
                 for cl in content_losses:
                     content_score += cl.loss
-                
+                # calculate total loss
                 style_score *= style_weight
                 content_score *= content_weight
                 
@@ -151,7 +162,7 @@ class SlowStyleTransfer():
             self.save_checkpoint(Epochs, model, style_losses, content_losses,\
                                  args, filename = "checkpoint.pth.tar")
 
-        # a last correction...
+        # last correction and plot image
         input_img.data.clamp_(0, 1)
         SaveImage(input_img, args)
         #PlotImage(args)
